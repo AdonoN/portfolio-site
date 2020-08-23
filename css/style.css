@@ -1,0 +1,85 @@
+/* --------------------------- */
+/* kv
+/* --------------------------- */
+.kv-wrapper {
+  height: 500px;
+  position: relative;
+}
+.kv-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.kv-name {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* --------------------------- */
+/* works
+/* --------------------------- */
+.works-item {
+  width: 47.4%;
+  transition: 0.3s;
+  margin-bottom: 24px;
+}
+.works-img-wrapper {
+  margin-bottom: 8px;
+  background-color: #fff;
+  transition: 0.3s;
+  border: 6px solid #777;
+}
+.works-item a {
+  display: block;
+  transition: 0.3s;
+}
+.works-item a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.works-item a:hover img {
+  transform: scale(1.05, 1.05);
+  transition: transform 0.3s;
+}
+.works-item a:hover .works-img-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.works-title {
+  font-weight: bold;
+}
+.works-category {
+  display: block;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+/* --------------------------- */
+/* about
+/* --------------------------- */
+.about-lead {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  /* --------------------------- */
+  /* kv
+  /* --------------------------- */
+  .kv-wrapper {
+    height: 62vh;
+    min-height: 280px;
+  }
+  .kv-message {
+    line-height: 1.5;
+  }
+  .works-item {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}

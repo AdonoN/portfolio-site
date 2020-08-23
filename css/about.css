@@ -1,0 +1,143 @@
+/* ----------------------------- */
+/* page title
+/* ----------------------------- */
+.page-title-wrapper.about-page-title {
+  height: 360px;
+}
+
+/* ----------------------------- */
+/* page title
+/* ----------------------------- */
+.profile-wrapper {
+  align-items: center;
+  margin-bottom: 60px;
+}
+.profile-img-wrapper {
+  max-width: 280px;
+  margin-right: 20px;
+}
+
+/* ----------------------------- */
+/* profile
+/* ----------------------------- */
+.subsection {
+  margin-bottom: 40px;
+}
+.subsection:last-of-type {
+  margin-bottom: 140px;
+}
+.prf-subsection-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.prf-subsection-title_jp {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+/* 画像なしのみ↓ */
+.profile-text {
+  width: 100%;
+}
+
+/* skills */
+.skill-list_design {
+  margin-bottom: 16px;
+}
+.skill-item {
+  margin-bottom: 8px;
+}
+.skill-item::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #444;
+  vertical-align: middle;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+.skill-category {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* career */
+.career-list {
+  max-width: 440px;
+}
+.career-item.flex-rr {
+  align-items: center;
+  font-size: 1.2rem;
+}
+.career-date {
+  width: 87px;
+  text-align: center;
+}
+.career-date.accent-bg {
+  line-height: 2;
+  font-weight: bold;
+  color: #fff;
+}
+.career-text {
+  width: 327px;
+  padding: 4px 0 4px 14px;
+  line-height: 1.5;
+  position: relative;
+  border-left: 1px solid #333;
+}
+.career-text::before {
+  content: "";
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  background-color: #333;
+  border-radius: 50%;
+}
+.career-text.latest::before {
+  background-color: #eb9718;
+}
+
+/* thanks message */
+.thanks-message {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-title {
+    white-space: nowrap;
+  }
+  .profile-img-wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .prf-subsection-title {
+    margin-bottom: 8px;
+  }
+
+  .skill-item {
+    line-height: 1.5;
+  }
+
+  .career-text {
+    width: 67%;
+    padding: 4px 0 4px 2vw;
+  }
+  .career-date {
+    width: 28%;
+    max-width: 120px;
+  }
+  .thanks-message {
+    line-height: 1.5;
+  }
+  .subsection:last-of-type {
+    margin-bottom: 80px;
+  }
+}
