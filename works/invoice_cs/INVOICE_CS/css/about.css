@@ -1,0 +1,89 @@
+/* ----------------------- */
+/* fv
+/* ----------------------- */
+.fv-visual {
+  background-image: url(../image/about-fv.jpg); /*こレヲ各ページのfvに持っていき画像挿入*/
+}
+@media screen and (max-width: 780px) {
+  .fv-visual {
+    background-image: url(../image/about-fv_sp.jpg);
+  }
+}
+
+/* ----------------------- */
+/* message
+/* ----------------------- */
+.content_message {
+  display: flex;
+  flex-flow: row-reverse;
+}
+.text_message {
+  /* display: flex;
+  flex-direction: column; */
+  margin-top: auto;
+  font-size: 2rem;
+  font-family: 'Noto Serif JP', serif;
+}
+.position, .name {
+  font-family: "Noto Sans JP";
+}
+.position {
+  font-size: 1.4rem;
+}
+.name {
+  font-size: 2.4rem;
+  padding-bottom: 35px;
+}
+.content_message img {
+  max-width: 550px;
+  padding-left: 60px;
+}
+@media screen and (max-width: 780px) {
+  .content_message {
+    flex-direction: column;
+  }
+  .text_message {
+    font-size: 1.6rem;
+  }
+  .content_message img {
+    padding-left: 0;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .position, .name {
+    display: block;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------- */
+/* philosohy
+/* ----------------------- */
+.content_philosohy p {
+  font-size: 2rem;
+  font-family: 'Noto Serif JP', serif;
+}
+table {
+  min-width: 100%;
+}
+th, td {
+  vertical-align: middle;
+}
+th {
+  width: 30%;
+  text-align: left;
+}
+tr {
+  height: 70px;
+  border: 1px solid #080f737f;
+  border-width: 1px 0px;
+}
+@media screen and (max-width: 780px) {
+  .content_philosohy:first-of-type {
+    margin-bottom: 35px;
+  }
+  .content_philosohy p {
+    font-size: 1.6rem;
+  }
+}

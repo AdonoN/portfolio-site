@@ -1,0 +1,54 @@
+/* ----------------------- */
+/* fv
+/* ----------------------- */
+.fv-visual {
+  background-image: url(../image/news-fv.png); /*こレヲ各ページのfvに持っていき画像挿入*/
+}
+@media screen and (max-width: 780px) {
+  .fv-visual {
+    background-image: url(../image/news-fv_sp.png);
+  }
+}
+
+/* ----------------------- */
+/* news
+/* ----------------------- */
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+.card-item {
+  height: 340px;
+  width: 333px;
+  border: 1px solid #080F7366;
+  box-shadow: 0 4px 4px #080F73b2;
+  margin: 0 auto 60px;
+}
+.card-img img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.card-text {
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.card-text time, .card-text p {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 781px) {
+  .card-item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  .card-list {
+    flex-direction: column;
+  }
+  .card-item:last-of-type {
+    margin-bottom: 0;
+  }
+}
